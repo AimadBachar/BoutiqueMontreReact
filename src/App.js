@@ -1,5 +1,5 @@
 import './App.css';
-import bannerImg from './assets/images/clocks-g53283f3cb_640.jpg';
+import bannerImg from './assets/images/banner.jpg';
 // Components
 import Banner from './components/Banner/Banner.js';
 // import Cart from './components/Cart/Cart.js';

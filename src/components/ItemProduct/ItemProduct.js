@@ -1,10 +1,11 @@
+import './style.scss';
+
 const ItemProduct = ({product}) => {
-    console.log(product);
     return (
-        <div className="product">
+        <div className="card">
             <div className="item-product">
                 <div className="item-product__img">
-                    <img src={product.img} alt={product.name} />
+                    <img src={product.img} alt={product.name} width={400}/>
                 </div>
                 <div className="item-product__info">
                     <h3 className="item-product__name">{product.name}</h3>

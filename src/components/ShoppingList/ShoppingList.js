@@ -2,6 +2,9 @@ import ItemProduct from '../ItemProduct/ItemProduct.js';
 // data
 import products from '../../data/productList.js';
 
+// scss
+import './style.scss';
+
 const ShoppingList = () => {
     const productsList = products.map(product => {
         return (
