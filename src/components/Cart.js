@@ -1,20 +1,29 @@
 const Cart = () => {
-    const price1 = 100;
-    const price2 = 200;
-    const price3 = 300;
+    const products = [
+        {id: 1, name: 'Montre Dior', price: 1300 },
+        {id: 2, name: 'Montre Tommy', price: 2700}, 
+        {id: 3, name: 'Montre Rolex', price: 4000}
+    ];
+
+    const list = products.map(product => {
+        return <li key={product.id}>{product.name}: {product.price}</li>
+    });
+
+    const total = products.reduce((total, product) => {
+        return total + product.price;
+    }, 0);
+
     return (
         <div className="cart">
             <h3>Votre panier</h3>
             <div className="cart-item">
-                <ul className="cart-item">
-                    <li>Montre Dior: {price1} €</li>
-                    <li>Montre Tommy: {price2} €</li>
-                    <li>Montre Rolexe: {price3} €</li>
+                <ul className="cart-items">
+                    {list}
                 </ul>
             </div>
             <div className="cart-total">
-                <h3>Total</h3>
-                <h3>{price1 + price2 + price3} €</h3>
+                <h4>Total</h4>
+                <h4>{ total } €</h4>
             </div>
         </div>
     )
