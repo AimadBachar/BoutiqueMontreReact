@@ -1,3 +1,5 @@
+import './style.scss';
+
 const Cart = () => {
     const products = [
         {id: 1, name: 'Montre Dior', price: 1300 },
@@ -6,7 +8,7 @@ const Cart = () => {
     ];
 
     const list = products.map(product => {
-        return <li key={product.id}>{product.name}: {product.price}</li>
+        return <li className='cart-items__item' key={product.id}>{product.name}: {product.price}</li>
     });
 
     const total = products.reduce((tot, product) => {
@@ -16,7 +18,7 @@ const Cart = () => {
     return (
         <div className="cart">
             <h3>Votre panier</h3>
-            <div className="cart-item">
+            <div className="cart-group">
                 <ul className="cart-items">
                     {list}
                 </ul>

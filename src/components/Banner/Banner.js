@@ -1,5 +1,6 @@
 import Description from '../Description/Description.js';
 import Header from '../Header/Header.js';
+import './style.scss';
 
 
 const Banner = () => {

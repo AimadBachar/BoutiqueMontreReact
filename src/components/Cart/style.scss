@@ -1,0 +1,18 @@
+.cart {
+    &-group {
+        .cart-items{ 
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            &__item{
+                color: blue;
+            }
+        }
+    }
+    &-total {
+        
+        color: red;
+
+    }
+}
