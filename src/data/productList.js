@@ -8,25 +8,29 @@ const productList =  [
         id: 1,
         name: 'Rolex',
         price: '100',
-        img: rolex    
+        img: rolex,
+        isSaled: true,    
     },
     {
         id: 2,
         name: 'Tommy Hilfiger',
         price: '200',
-        img: tommy
+        img: tommy,
+        isSaled: false,
     },
     {
         id: 3,
         name: 'Lacoste',
         price: '300',
-        img: lacoste
+        img: lacoste,
+        isSaled: true,
     },
     {
         id: 4,
         name: 'Gucci',
         price: '400',
-        img: gucci
+        img: gucci,
+        isSaled: false,
     }
 ]
 
