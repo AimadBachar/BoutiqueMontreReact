@@ -2,7 +2,10 @@ import './style.scss';
 
 const Header = ({title}) => {
     return (
-    <h1 className='header'>{ title }</h1>
+        <div className="header">
+            
+            <h1 className='header'>{ title }</h1>
+        </div>
     );
 }
 

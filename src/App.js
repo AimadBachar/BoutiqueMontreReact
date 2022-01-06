@@ -6,6 +6,9 @@ import Banner from './components/Banner/Banner.js';
 
 import ShoppingList from './components/ShoppingList/ShoppingList';
 
+// data
+import products from './data/productList.js';
+
 
 function App() {
   return (
@@ -13,7 +16,7 @@ function App() {
       <img src={bannerImg} alt="banner-clock" className="banner-img" />
       <Banner />
       {/* <Cart /> */}
-      <ShoppingList />
+      <ShoppingList products={products}/>
     </div>
   );
 }
