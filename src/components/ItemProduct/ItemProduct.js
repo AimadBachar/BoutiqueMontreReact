@@ -10,7 +10,8 @@ const ItemProduct = ({product}) => {
                 <div className="item-product__info">
                     <h3 className="item-product__name">{product.name}</h3>
                     <p className="item-product__price">{product.price} €</p>
-                {product.isSaled && <p className="item-product__sale">Sale</p>} 
+                {product.isSaled && <p className="item-product__sale">Solde</p>} 
+                {product.quantity === 0 && <span className="item-product__out-of-stock">Out of stock</span>}
                 </div>
             </div>
         </div>
