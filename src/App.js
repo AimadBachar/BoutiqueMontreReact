@@ -13,7 +13,7 @@ import products from './data/productList.js';
 function App() {
   return (
     <div className="App">
-      <img src={bannerImg} alt="banner-clock" className="banner-img" />
+      <img src={bannerImg} alt="banner-clock" className="banner-img"/>
       <Banner />
       {/* <Cart /> */}
       <ShoppingList products={products}/>
