@@ -9,7 +9,8 @@ const productList =  [
         name: 'Rolex',
         price: '100',
         img: rolex,
-        isSaled: true,    
+        isSaled: true,
+        quantity: 5    
     },
     {
         id: 2,
@@ -17,6 +18,7 @@ const productList =  [
         price: '200',
         img: tommy,
         isSaled: false,
+        quantity: 10
     },
     {
         id: 3,
@@ -24,6 +26,7 @@ const productList =  [
         price: '300',
         img: lacoste,
         isSaled: true,
+        quantity: 15
     },
     {
         id: 4,
@@ -31,6 +34,7 @@ const productList =  [
         price: '400',
         img: gucci,
         isSaled: false,
+        quantity: 0
     }
 ]
 
