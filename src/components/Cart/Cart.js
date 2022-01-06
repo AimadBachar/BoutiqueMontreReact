@@ -9,8 +9,8 @@ const Cart = () => {
         return <li key={product.id}>{product.name}: {product.price}</li>
     });
 
-    const total = products.reduce((total, product) => {
-        return total + product.price;
+    const total = products.reduce((tot, product) => {
+        return tot + product.price;
     }, 0);
 
     return (
@@ -22,7 +22,7 @@ const Cart = () => {
                 </ul>
             </div>
             <div className="cart-total">
-                <h4>Total</h4>
+                <h4>Total: </h4>
                 <h4>{ total } €</h4>
             </div>
         </div>

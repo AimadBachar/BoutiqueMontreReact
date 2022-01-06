@@ -1,8 +1,8 @@
 import './App.css';
 
 // Components
-import Banner from './components/Banner';
-import Cart from './components/Cart.js';
+import Banner from './components/Banner/Banner.js';
+import Cart from './components/Cart/Cart.js';
 
 function App() {
   return (

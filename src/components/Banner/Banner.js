@@ -1,5 +1,5 @@
-import Description from './Description.js';
-import Header from './Header.js';
+import Description from '../Description/Description.js';
+import Header from '../Header/Header.js';
 
 
 const Banner = () => {
