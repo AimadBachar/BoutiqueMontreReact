@@ -5,11 +5,12 @@ const ItemProduct = ({product}) => {
         <div className="card">
             <div className="item-product">
                 <div className="item-product__img">
-                    <img src={product.img} alt={product.name} width={400}/>
+                    <img src={product.img} alt={product.name} />
                 </div>
                 <div className="item-product__info">
                     <h3 className="item-product__name">{product.name}</h3>
                     <p className="item-product__price">{product.price} €</p>
+                {product.isSaled && <p className="item-product__sale">Sale</p>} 
                 </div>
             </div>
         </div>
