@@ -1,10 +1,8 @@
 import './style.scss';
 
-const Header = () => {
-    const title = "boutique de montres";
-    const titleMaj = title.toUpperCase();
+const Header = ({title}) => {
     return (
-    <h1 className='header'>{ titleMaj }</h1>
+    <h1 className='header'>{ title }</h1>
     );
 }
 

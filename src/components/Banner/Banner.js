@@ -6,7 +6,7 @@ import './style.scss';
 const Banner = () => {
     return (
         <div className="banner">
-            <Header />
+            <Header title="Boutique de montres"/>
             <Description />
         </div>
     );
