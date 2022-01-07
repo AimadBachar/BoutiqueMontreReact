@@ -10,6 +10,7 @@ import products from './data/productList.js';
 
 // import { useState } from 'react';
 import Clock from './components/Clock/Clock';
+import Footer from './components/Footer/Footer';
 
 function App() {
   // let [count, setCount] = useState(0);
@@ -26,6 +27,7 @@ function App() {
         <Clock />
       </div>
       <ShoppingList products={products}/>
+      <Footer />
     </div>
   );
 }
