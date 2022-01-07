@@ -2,7 +2,7 @@ import './App.css';
 import bannerImg from './assets/images/banner.jpg';
 // Components
 import Banner from './components/Banner/Banner.js';
-// import Cart from './components/Cart/Cart.js';
+import Cart from './components/Cart/Cart.js';
 import ShoppingList from './components/ShoppingList/ShoppingList';
 
 // data
@@ -19,10 +19,12 @@ function App() {
     <div className="App">
       <img src={bannerImg} alt="banner-clock" className="banner-img"/>
       <Banner />
-      {/* <p>{ count }</p>
-      <button onClick={()=>setCount(count++)}>Increment</button> */}
-      {/* <Cart /> */}
-      <Clock />
+      <div style={{display: 'flex'}}>
+        {/* <p>{ count }</p>
+        <button onClick={()=>setCount(count++)}>Increment</button> */}
+        <Cart />
+        <Clock />
+      </div>
       <ShoppingList products={products}/>
     </div>
   );
