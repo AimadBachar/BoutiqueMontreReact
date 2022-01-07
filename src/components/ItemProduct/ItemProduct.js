@@ -1,6 +1,5 @@
 import './style.scss';
 
-import ModalInfo from '../ModalInfo/ModalInfo';
 
 const ItemProduct = ({product}) => {
     const handleClick = () => {
