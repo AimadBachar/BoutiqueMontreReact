@@ -1,35 +1,21 @@
-import { useState } from "react";
-
-const MyForm = () => {
-    const [input, setInput] = useState("");
-    
-    const emailIsValid = (e) => {
-        e.preventDefault();
-        let regEx = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-        if (regEx.test(input)) {
-            setInput("");
-        } else {
-            alert("Invalid email address");
-        }
-    
-    };
-    
-    const handleChange = (e) => {
-        setInput(e.target.value);
-    };
-    
-    return (
-        <div>
-            <form onBlur={emailIsValid}>
-                <input
-                type="mail"
-                value={input}
-                onChange={handleChange}
-                placeholder="Entrez votre email"
-                />
-            </form>
-        </div>
-    );
+import React, { useState } from "react";
+const checkEmail = (email) => {
+  let check = email.match(
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  );
+  !check && alert("inserer un email valide");
 };
+export default function Footer() {
+  const [value, setValueInput] = useState("");
 
-export default MyForm;
+  return (
+    <div className="footer">
+      <form>
+        <div>
+          <input value={value} onChange={(e)=>setValueInput(e.target.value)} 
+          onBlur={()=>checkEmail(value)} />
+        </div>
+      </form>
+    </div>
+  );
+}
